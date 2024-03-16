@@ -2,5 +2,4 @@ streamlit==1.29.0
 embedchain==0.1.76
 webdriver-manager
 selenium==4.18.1
-chromadb
-sqlite3
+pysqlite3-binary
