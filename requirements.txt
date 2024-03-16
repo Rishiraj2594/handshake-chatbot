@@ -3,3 +3,4 @@ embedchain==0.1.76
 webdriver-manager
 selenium==4.18.1
 chromadb
+sqlite3
