@@ -12,7 +12,7 @@ def get_top_links(search_query, num_links=5):
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()), options=options)
 
     driver.get(f"https://hnssearch.io/search?s={search_query}")
     time.sleep(4)  # Wait for the page to load (you might replace this with WebDriverWait)
