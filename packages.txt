@@ -1,1 +1,1 @@
-google-chrome-stable
+apt-get install google-chrome-stable
